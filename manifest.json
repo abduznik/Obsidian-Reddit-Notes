@@ -1,0 +1,10 @@
+{
+	"id": "reddit-notes",
+	"name": "Reddit Notes Plugin",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "A plugin to fetch Reddit posts and save them as notes in Obsidian.",
+	"author": "abduznik",
+	"authorUrl": "",
+	"isDesktopOnly": false
+}
