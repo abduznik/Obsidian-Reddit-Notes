@@ -17,7 +17,7 @@ This plugin allows you to fetch posts from specified subreddits and save them as
 
 1.  **Disable Safe Mode:** Go to `Settings` -> `Community Plugins` and turn off `Safe Mode`.
 2.  **Install Manually:**
-    1.  Download the `main.js`, `styles.css`, and `manifest.json` files from the `dist` folder of the [latest release]([link-to-releases-page](https://github.com/abduznik/Obsidian-Reddit-Notes/releases/)).
+    1.  Download the `main.js`, `styles.css`, and `manifest.json` files from the `dist` folder of the [latest release](https://github.com/abduznik/Obsidian-Reddit-Notes/releases/).
     2.  Create a new folder named `obsidian-reddit-notes` in your vault's `.obsidian/plugins/` directory.
     3.  Copy the downloaded files into the `obsidian-reddit-notes` folder.
 3.  **Enable Plugin:** Go to `Settings` -> `Community Plugins` and enable the `Reddit Notes Plugin`.
