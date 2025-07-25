@@ -1,5 +1,7 @@
 # Obsidian Reddit Notes Plugin
 
+![](example.jpg)
+
 This plugin allows you to fetch posts from specified subreddits and save them as individual notes in your Obsidian vault. It also creates an index note for each subreddit, linking to all the fetched posts.
 
 ## Features
@@ -24,7 +26,8 @@ This plugin allows you to fetch posts from specified subreddits and save them as
 
 1.  **Configure Settings:**
     1.  Go to `Settings` -> `Reddit Notes Plugin`.
-    2.  **Subreddits:** Enter the subreddits you want to fetch posts from, separated by commas (e.g., `obsidian, programming, productivity`).
+    2.  **Base Folder Path:** The base folder where Reddit notes will be saved. Leave blank for vault root. (e.g., `Reddit` or `My Notes/Reddit`)
+    3.  **Subreddit Configuration:** Use the "Add Subreddit" button to add new subreddits. For each subreddit, enter its name and select the post category (Hot, New, Rising, Best, Top) from the dropdown.
     3.  **Post Filters:** Enter keywords to filter out posts. Posts containing any of these keywords in their title or content will be ignored (e.g., `meme, politics, discussion`).
     4.  **Note Generation Limit:** Set the maximum number of notes to generate per batch for each subreddit (e.g., `10`).
     5.  Close the settings tab to save your changes.
@@ -37,8 +40,8 @@ This plugin allows you to fetch posts from specified subreddits and save them as
 
 ## Note Structure
 
--   All notes will be saved under a `Reddit` folder in your vault.
--   Inside the `Reddit` folder, a subfolder will be created for each subreddit (e.g., `Reddit/obsidian`).
+-   All notes will be saved under the configured **Base Folder Path** in your vault. If the Base Folder Path is left blank, notes will be saved in the vault root.
+-   Inside the base folder, a subfolder will be created for each subreddit (e.g., `Reddit/obsidian` or `obsidian` if base folder is blank).
 -   Each subreddit folder will contain:
     -   Individual notes for each fetched Reddit post (e.g., `Reddit - obsidian - My Awesome Post.md`).
     -   An index note named after the subreddit (e.g., `obsidian.md`) which lists all the fetched posts for that subreddit.
